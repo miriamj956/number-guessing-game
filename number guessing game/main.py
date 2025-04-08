@@ -20,6 +20,7 @@ def guessButton():
         tkinter.messagebox.showinfo("lower", "Your guess is too low!")
     elif guess == number:
         tkinter.messagebox.showinfo("correct", "You've guessed correctly!")
+        root.destroy()
 
 
 label1 = Label(root, text="Welcome to our game!")
@@ -29,7 +30,7 @@ label2 = Label(root, text="Enter your name:")
 label2.place(x=50,y=50)
 
 entry1= Entry(root)
-entry1.place(x=50, y=70)
+entry1.place(x=50, y=70)    
 
 button1 = Button(root, text="OK", command=greet)
 button1.place(x=200, y=65)
